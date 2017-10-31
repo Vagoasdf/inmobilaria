@@ -1,0 +1,171 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	</head>	
+
+<body>
+
+  <!-- NavBar-->
+   <nav class="nav-extended">
+
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo </a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="active"> <a href="#">Propiedades</a></li>
+        <li class="disabled"><a href="#">Consejos</a></li>
+        <li class="disabled"> <a href="#">Sobre Nosotros</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li class="active"><a href="#">Propiedades</a></li>
+        <li class="disabled" ><a href="#">Consejos</a></li>
+        <li class="disabled"> <a href="#">Sobre Nosotros</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent tabs-fixed-width">
+        <li class="tab"><a class="active" href="#buscarProp">Buscar propiedad</a></li>
+        <li class="tab"><a href="#catalogo">Catálogo</a></li>
+        <li class="tab"><a href="#enviarProp">Enviar Propiedad</a></li>
+      </ul>
+    </div>
+
+  </nav>
+<div class="container">
+  <div id="buscarProp" class="col s12">
+    <h1>Formulario de Buscar Propiedad! Debería estar en tab 1</h1>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="blue lighten-4">
+          
+            
+            <p class="card-title center">Buscar Propiedad</p>
+            
+            <form action="#">
+            
+              <div class="divider black"></div>
+              
+              <div class="row">
+                <div class="col s12 m4"> <p> Operacion: </p> </div>
+                
+                <div class="col s6 m4"> <input type="checkbox" id="test5" /><label for="test5">Venta</label></div>
+                
+                <div class="col s6 m4"><input type="checkbox" id="test6" /><label for="test6">Arriendo</label></div>
+            </div>
+
+            <div class="row">  
+              <div class="col s12 m3"> <p> Tipo de Propiedad</p></div>
+            
+                <div class="col s4 m3"> <input type="checkbox" id="test7" /><label for="test7">Departamento</label></div>
+                <div class="col s4 m3"> <input type="checkbox" id="test8" /><label for="test8">Casa</label></div>
+                <div class="col s4 m3"> <input type="checkbox" id="test9" /><label for="test9">Comercial</label></div>
+                <!-- Añadir mas, son caleta de filitas, pero siempre de 3 en 3 pq se ve boni-->          
+            </div>
+
+            <div class="row">
+              
+              <div class="input-field col s6 m4 offset-m2 ">
+                <input placeholder="10000" id="minimo" type="text" class="validate">
+                <label for="minimo">Precio Minimo</label>
+              </div>
+              <div class="input-field col s6 m4 ">
+                  <input id="maximo" type="text" class="validate">
+                  <label for="maximo">Precio Maximo </label>
+              </div>
+            
+            </div>
+
+
+            <div class="row">
+              
+  
+              <div class="input-field col s8 offset-s2">
+                <select multiple>
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">Hoshtetter</option>
+                  <option value="2">Estadio</option>
+                  <option value="3">Av. Alemania</option>
+                  <option value="4">Lomas del Mirasur</option>
+                  <option value="5">Barros Arana</option>
+                </select>
+                <label>Sector</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s8 offset-s2">
+                <ul class="collection">
+                  <li class="collection-item"><div>Barros Arana<a href="#!" class="secondary-content"><i class="material-icons">clear</i></a></div></li>
+                  <li class="collection-item"><div>Estadio<a href="#!" class="secondary-content"><i class="material-icons">clear</i></a></div></li>
+                </ul>
+              </div>
+            </div>
+
+            
+
+
+            
+
+            </form>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="divider"></div>
+  <div id="catalogo" class="col s12">Catalogo! Esto debería estar en Tab 2</div>
+  <div class="divider"></div>
+  <div id="enviarProp" class="col s12">Enviar Propiedad! Esto debería estar en tab 3
+    <p>
+      Te wa a ser honesto. No se me ocurre que poner acá. Un formulario simple nomas? Centrado, pedirle
+      los datos necesarios de la propiedad: 
+    </p>
+    <p>
+      -Si es para venta o arriendo 
+      -Precio de venta y arriendo
+      -tipo de vivienda (Depto, Casa, Agricola, Comercial, )
+      -Metros cuadrados
+      <br/>
+      -numero de Dormitorios
+      -Numero de Baños
+      -Pisos
+      -sector
+      <br/>
+      -Contiene bodega
+      -Contiene Estacionamientos
+      -datos del Dueño (correo, Telefono, nombre)
+
+
+    </p>
+  </div>
+
+</div>
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.js"></script>       
+<script type="text/JavaScript">
+
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+</script>
+</body>
+
+
+
+
+
+
+</html>
